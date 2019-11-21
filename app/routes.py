@@ -19,3 +19,7 @@ def bass():
 @app.route('/drums')
 def drums():
     return render_template('drums.html', title='Drums')
+
+@app.route('/shred')
+def shred():
+    return render_template('shred.html', title="Songs")
