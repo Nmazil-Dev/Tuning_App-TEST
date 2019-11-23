@@ -4,4 +4,12 @@
 {% block content %}
 <h1>Bass</h1>
 <h2>Tune Your Bass Here!</h2>
+<select name= tunings method="GET" action="/">
+    {% for tuning in tunings %}
+    <option value= "{{tuning}}">{{tuning}}</option>"
+    {% endfor %}
+</select>
+{% for i in strings %}
+    <button>{{ i }}</button>
+{% endfor %}
 {% endblock content %}
