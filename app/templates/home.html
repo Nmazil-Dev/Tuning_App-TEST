@@ -4,4 +4,9 @@
 {% block content %}
 <h1>WELCOME TO THE BEST TUNING APP EVER!</h1>
 <h2>Select an instrument you'd like to tune, or <a href="#">login</a> and shred to your custom playlist!</h2>
+<div class="container">
+    <img class="instrument-button" src="{{ url_for('static', filename='images/guitar-img.jpg') }}" alt="">
+    <img class="instrument-button" src="{{ url_for('static', filename='images/bass-img.jpg') }}" alt="">
+</div>
+
 {% endblock content %}
